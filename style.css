@@ -1,0 +1,663 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+  background-color: #F9F6F1;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.modal .modal-dialog .modal-content .modal-header h4 {
+  font-weight: 600;
+  font-size: 16px;
+}
+.modal .modal-dialog .modal-content .modal-body {
+  margin-bottom: 30px;
+}
+.modal .modal-dialog .modal-content .modal-body .row {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.modal .modal-dialog .modal-content .modal-body .row .viewy {
+  box-shadow: 0 2px 6px #0000001A;
+  height: 150px;
+  width: 31%;
+  float: left;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 15px;
+  border-radius: 7px;
+  position: relative;
+}
+.modal .modal-dialog .modal-content .modal-body .row .viewy h6 {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #4D4A21;
+}
+.modal .modal-dialog .modal-content .modal-body .row .viewy p {
+  font-size: 11px;
+  color: #4D4A21;
+}
+.modal .modal-dialog .modal-content .modal-body .row .viewy .footer {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.modal .modal-dialog .modal-content .modal-body .row .viewy .footer a {
+  color: #F57F3D;
+  font-size: 11px;
+  text-decoration: underline;
+}
+.modal .modal-dialog .modal-content .modal-body .row .shift {
+  margin-left: 3%;
+}
+.modal .modal-dialog .modal-content .modal-body .row .toh {
+  margin-top: 3%;
+}
+.modal .modal-dialog .modal-content .modal-body .row .col-md-12 {
+  height: 200px;
+  text-align: left;
+}
+.modal .modal-dialog .modal-content .modal-body .row .col-md-12 label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4D4A21;
+  margin-top: 15px;
+}
+.modal .modal-dialog .modal-content .modal-body .row .col-md-12 input {
+  width: 100%;
+  border-bottom: 1px solid #b7b7b7;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+  height: 40px;
+}
+.modal .modal-dialog .modal-content .modal-body .row .col-md-12 ::placeholder {
+  font-size: 12px;
+}
+.modal .modal-dialog .modal-content .modal-body .row .product {
+  margin-left: 15px;
+  font-weight: 600;
+  padding-top: 30px;
+  text-align: left;
+  width: 100%;
+  color: #4D4A21;
+}
+.modal .modal-dialog .modal-content .modal-body .row .col-md-6 {
+  text-align: left;
+}
+.modal .modal-dialog .modal-content .modal-body .row .col-md-6 input[type=checkbox] {
+  margin-top: 20px;
+}
+.modal .modal-dialog .modal-content .modal-body .row .col-md-6 span {
+  margin-left: 20px;
+  color: #4D4A21;
+}
+.modal .modal-dialog .modal-content .modal-body .row .col-md-6 p {
+  font-size: 13px;
+  color: #4D4A21;
+  width: 40%;
+  display: inline-block;
+  margin: 0;
+}
+.modal .modal-dialog .modal-content .modal-body .row .col-md-6 input[type=text], .modal .modal-dialog .modal-content .modal-body .row .col-md-6 input[type=date] {
+  width: 35%;
+  border: 1px solid rgba(183, 183, 183, 0.5);
+  height: 45px;
+  border-radius: 7px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.modal .modal-dialog .modal-content .modal-body .row .col-md-6 ::placeholder {
+  font-size: 13px;
+  color: #b7b7b7;
+}
+.modal .modal-dialog .modal-content .modal-body .row button {
+  width: 30%;
+  height: 35px;
+  background-color: #F57F3D;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  margin-top: 50px;
+}
+
+.wrapper .sidebar .sidebar-wrapper {
+  background-color: #4D4A21;
+}
+.wrapper .sidebar .sidebar-wrapper .logo {
+  height: 90px;
+  background-color: #fff;
+  border-right: 1px solid #b7b7b7;
+}
+.wrapper .sidebar .sidebar-wrapper .logo img {
+  height: 64px;
+  width: 48px;
+}
+.wrapper .sidebar .sidebar-wrapper .nav li a i {
+  color: #F57F3D;
+  font-size: 15px;
+}
+.wrapper .sidebar .sidebar-wrapper .nav li a p {
+  text-transform: capitalize !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+.wrapper .sidebar .sidebar-wrapper .nav li .dropdown-menu li a {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+.wrapper .sidebar .sidebar-wrapper .nav li .dropdown-menu li a img {
+  height: 25px;
+  width: 25px;
+}
+.wrapper .main-panel .collapse .nav {
+  height: 90px;
+  padding-top: 12px;
+}
+.wrapper .main-panel .collapse .nav li i {
+  color: #b7b7b7;
+  font-size: 13px;
+}
+.wrapper .main-panel .collapse .nav li input {
+  border: none;
+  width: 300px;
+  padding-top: 20px;
+}
+.wrapper .main-panel .collapse .nav li ::placeholder {
+  color: #b7b7b7;
+  font-size: 13px;
+}
+.wrapper .main-panel .collapse .navbar-right .dropdown p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+.wrapper .main-panel .collapse .navbar-right .dropdown p img {
+  height: 25px;
+  width: 25px;
+}
+.wrapper .main-panel .collapse .navbar-right .notify {
+  border: none;
+  box-shadow: 0 0 5px #b7b7b7;
+}
+.wrapper .main-panel .collapse .navbar-right .notify p {
+  text-align: center;
+  padding: 13px 0;
+  font-weight: 600;
+}
+.wrapper .main-panel .collapse .navbar-right .notify .see {
+  font-size: 14px;
+  color: #4D4A21;
+  font-weight: 500;
+}
+.wrapper .main-panel .collapse .navbar-right .notify .see a {
+  color: #F57F3D;
+}
+.wrapper .main-panel .collapse .navbar-right .notify li {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #eee;
+  color: black;
+  padding: 0 25px;
+}
+.wrapper .main-panel .collapse .navbar-right .notify li a {
+  font-weight: 600;
+}
+.wrapper .main-panel .collapse .navbar-right .notify li span {
+  font-size: 11px;
+  color: #c0c0c0;
+  font-weight: 500;
+}
+.wrapper .main-panel .collapse .navbar-right .account {
+  border: none;
+  box-shadow: 0 0 5px #b7b7b7;
+}
+.wrapper .main-panel .collapse .navbar-right .account li {
+  text-align: center;
+}
+
+.content .container-fluid h1 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #4D4A21;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  float: left;
+}
+.content .container-fluid .row .create button {
+  float: right;
+  background-color: #F57F3D;
+  border: none;
+  height: 35px;
+  width: 200px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 13px;
+  margin-right: 15px;
+}
+.content .container-fluid .row .create button i {
+  margin-right: 7px;
+  font-size: 14px;
+}
+.content .container-fluid .row .loan div {
+  width: 90%;
+  float: left;
+  height: 45px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px #0000001A;
+}
+.content .container-fluid .row .loan div i {
+  font-size: 12px;
+  color: #b7b7b7;
+}
+.content .container-fluid .row .loan div input {
+  border: none;
+  width: inherit;
+  padding-top: 11px;
+}
+.content .container-fluid .row .loan div ::placeholder {
+  color: #b7b7b7;
+  font-size: 13px;
+}
+.content .container-fluid .row .loan button {
+  background-color: #F57F3D;
+  color: #fff;
+  height: 45px;
+  width: 10%;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.content .container-fluid .row .export {
+  margin: 30px 0 10px 0;
+}
+.content .container-fluid .row .export a button {
+  float: right;
+  border: 1px solid #F57F3D;
+  color: #F57F3D;
+  background-color: transparent;
+  height: 35px;
+  width: 9%;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+.content .container-fluid .row .tabluea {
+  border: none !important;
+}
+.content .container-fluid .row .tabluea .card {
+  border: none !important;
+}
+.content .container-fluid .row .tabluea .card .header h4 {
+  float: left;
+  font-size: 15px;
+  font-weight: 500;
+}
+.content .container-fluid .row .tabluea .card .header p {
+  float: right;
+  font-size: 11px;
+}
+.content .container-fluid .row .tabluea .table-responsive {
+  border: none !important;
+}
+.content .container-fluid .row .tabluea .table-responsive .table-hover {
+  border: none !important;
+  padding: 0 30px;
+}
+.content .container-fluid .row .tabluea .table-responsive .table-hover .num {
+  padding-left: 30px;
+}
+.content .container-fluid .row .tabluea .table-responsive .table-hover thead {
+  padding: 10px 20px;
+}
+.content .container-fluid .row .tabluea .table-responsive .table-hover thead th {
+  background-color: #F2FBE8;
+  color: #4D4A21;
+  text-transform: capitalize;
+  font-weight: 700;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.content .container-fluid .row .tabluea .table-responsive .table-hover tbody tr {
+  background-color: #fff !important;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.content .container-fluid .row .tabluea .table-responsive .table-hover tbody tr a {
+  color: #F57F3D;
+  text-decoration: underline;
+}
+.content .container-fluid .row .tabluea .table-responsive .table-hover tbody tr:hover {
+  background-color: #f7f7f7 !important;
+}
+.content .container-fluid .row .tabluea .table-responsive .pagination {
+  padding-left: 30px;
+}
+.content .container-fluid .row .tabluea .table-responsive .pagination li {
+  margin-left: 5px !important;
+}
+.content .container-fluid .row .tabluea .table-responsive .pagination .active {
+  background-color: #F57F3D !important;
+}
+.content .container-fluid .row .editProduct {
+  border: none;
+}
+.content .container-fluid .row .editProduct .card {
+  padding-bottom: 30px;
+  border: none;
+  box-shadow: 0 2px 6px #0000001A;
+}
+.content .container-fluid .row .editProduct .card h2 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+  padding: 18px 30px;
+  background-color: #F9F6F1;
+}
+.content .container-fluid .row .editProduct .card h2 span {
+  font-weight: 400;
+}
+.content .container-fluid .row .editProduct .card .inputTexts {
+  padding-left: 30px;
+  text-align: center;
+}
+.content .container-fluid .row .editProduct .card .inputTexts p {
+  font-size: 13px;
+  color: #4D4A21;
+}
+.content .container-fluid .row .editProduct .card .inputTexts .inpt {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  text-align: left;
+}
+.content .container-fluid .row .editProduct .card .inputTexts .inpt input, .content .container-fluid .row .editProduct .card .inputTexts .inpt select {
+  margin-left: 150px;
+}
+.content .container-fluid .row .editProduct .card .inputTexts .inpt input[type=text], .content .container-fluid .row .editProduct .card .inputTexts .inpt input[type=number] {
+  height: 45px;
+  width: 60px;
+  border: 1px solid #b7b7b7;
+  border-radius: 2px;
+  padding-left: 10px;
+}
+.content .container-fluid .row .editProduct .card .inputTexts .inpt select {
+  height: 45px;
+  width: 250px;
+  border: 1px solid #b7b7b7;
+  border-radius: 2px;
+  padding-left: 10px;
+  margin-left: 130px;
+}
+.content .container-fluid .row .editProduct .card .inputTexts .inpt input[type=radio] {
+  margin-left: 50px;
+}
+.content .container-fluid .row .editProduct .card .inputTexts .inpt ::placeholder {
+  font-size: 11px;
+  color: #b7b7b7;
+}
+.content .container-fluid .row .editProduct .card .inputTexts .inpt p {
+  float: left;
+}
+.content .container-fluid .row .editProduct .card .inputTexts h5 {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+}
+.content .container-fluid .row .editProduct .card .inputTexts button {
+  width: 32%;
+  background-color: #F57F3D;
+  border: none;
+  height: 30px;
+  margin: 50px 0;
+  border-radius: 3px;
+  color: #fff;
+}
+.content .container-fluid .row .right select {
+  background-color: #fff;
+  width: 97%;
+  height: 45px;
+  border: none;
+  box-shadow: 0 2px 6px #0000001A;
+  border-radius: 3px;
+  padding-left: 15px;
+}
+.content .container-fluid .officers .viewy {
+  box-shadow: 0 2px 6px #0000001A;
+  height: 200px;
+  width: 31%;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+.content .container-fluid .officers .viewy h6 {
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #4D4A21;
+}
+.content .container-fluid .officers .viewy div {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  height: 40px;
+}
+.content .container-fluid .officers .viewy div .side {
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  float: left;
+}
+.content .container-fluid .officers .viewy div .num {
+  float: right;
+  margin: 0;
+  font-weight: 300;
+  font-size: 11px;
+}
+.content .container-fluid .officers .shift {
+  margin-left: 3%;
+}
+.content .container-fluid .officers .toh {
+  margin-top: 3%;
+}
+.content .container-fluid .borrow .viewy {
+  box-shadow: 0 2px 6px #0000001A;
+  height: 100px;
+  width: 48%;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+.content .container-fluid .borrow .viewy div {
+  width: 100%;
+  padding-top: 22px;
+}
+.content .container-fluid .borrow .viewy div i {
+  float: left;
+  color: #F57F3D;
+  margin-right: 20px;
+  font-size: 25px;
+}
+.content .container-fluid .borrow .viewy div p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #4D4A21;
+  display: inline-block;
+}
+.content .container-fluid .borrow .viewy div a button {
+  float: right;
+  border: 1px solid #F57F3D;
+  color: #F57F3D;
+  border-radius: 3px;
+  background-color: transparent;
+  height: 35px;
+  width: 100px;
+}
+.content .container-fluid .borrow .shift {
+  margin-left: 3%;
+}
+.content .container-fluid .borrow .toh {
+  margin-top: 3%;
+}
+.content .container-fluid .link .back {
+  color: #F57F3D;
+  float: left;
+  margin-right: 30px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.content .container-fluid .link h1 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #4D4A21;
+  margin: 0;
+}
+.content .container-fluid .link .print {
+  float: right;
+}
+.content .container-fluid .link .print a {
+  font-size: 11px;
+  color: #F57F3D;
+  margin-right: 20px;
+}
+.content .container-fluid .borrowDetail {
+  background-color: #fff;
+  box-shadow: 0 2px 6px #0000001A;
+  margin: 0;
+  padding: 10px 0 30px 0;
+  display: none;
+}
+.content .container-fluid .borrowDetail .col-md-12 {
+  padding-top: 15px;
+}
+.content .container-fluid .borrowDetail .col-md-12 .fa-user-alt {
+  float: left;
+  color: #F57F3D;
+  font-size: 22px;
+  margin-right: 30px;
+}
+.content .container-fluid .borrowDetail .col-md-12 p {
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 700;
+  color: #4D4A21;
+}
+.content .container-fluid .borrowDetail .col-md-12 .fa-times {
+  float: right;
+  color: #F57F3D;
+  cursor: pointer;
+}
+.content .container-fluid .borrowDetail .first {
+  padding: 0 30px 10px 50px;
+}
+.content .container-fluid .borrowDetail .second {
+  padding: 0 50px 10px 30px;
+}
+.content .container-fluid .borrowDetail label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4D4A21;
+  margin-top: 15px;
+}
+.content .container-fluid .borrowDetail input {
+  width: 100%;
+  border-bottom: 1px solid #b7b7b7;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+  height: 40px;
+}
+.content .container-fluid .borrowDetail ::placeholder {
+  font-size: 12px;
+}
+
+.container-fluid .row .ibile-logo {
+  height: 1000px;
+  background-image: url(./assets/img/Left-Partition.svg);
+  background-size: cover;
+  background-position: right -10px bottom 200px;
+}
+.container-fluid .row .ibile-logo .log {
+  margin: auto;
+  width: 50%;
+  padding-top: 100px;
+}
+.container-fluid .row .ibile-logo .log img {
+  width: 218px;
+  height: 328px;
+  margin-left: 50px;
+}
+.container-fluid .row .theForm {
+  padding-top: 100px;
+  padding-right: 50px;
+  padding-left: 0;
+}
+.container-fluid .row .theForm h1 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.container-fluid .row .theForm p {
+  font-size: 14px;
+  color: #b7b7b7;
+  margin-top: 0;
+}
+.container-fluid .row .theForm label {
+  font-weight: 400;
+  font-size: 12px;
+  color: #000;
+}
+.container-fluid .row .theForm input {
+  border-bottom: 1px solid rgba(183, 183, 183, 0.5);
+}
+.container-fluid .row .theForm div.error {
+  position: relative;
+  top: -1rem;
+  left: 0rem;
+  font-size: 0.8rem;
+  color: #FF4081;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+}
+.container-fluid .row .theForm .input-field {
+  padding-left: 0;
+}
+.container-fluid .row .theForm button {
+  width: 40%;
+  height: 35px;
+  margin-top: 40px;
+  color: #fff;
+  background-color: #F57F3D;
+  border: none;
+  border-radius: 3px;
+}
+
+/*# sourceMappingURL=style.css.map */

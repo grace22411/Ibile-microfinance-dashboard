@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/img/Ibile Logo.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Loans | Ibile Microfinance Bank</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
+
+    <script src="https://kit.fontawesome.com/799b643291.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!--     Fonts and icons     -->
+    
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">View</h4>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="viewy">
+                    <h6>Pending Loan</h6>
+                    <p>₦180,000,000</p>
+                    <div class="footer">
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <div class="viewy shift">
+                    <h6>Approved Loan</h6>
+                    <p>₦180,000,000</p>
+                    <div class="footer">
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <div class="viewy shift">
+                    <h6>Active Loan</h6>
+                    <p>₦180,000,000</p>
+                    <div class="footer">
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <div class="viewy toh">
+                    <h6>Default/Overdue Loan</h6>
+                    <p>₦180,000,000</p>
+                    <div class="footer">
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <div class="viewy shift toh">
+                    <h6>Resturcture Loan</h6>
+                    <p>₦180,000,000</p>
+                    <div class="footer">
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="sidebar">
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="" class="simple-text">
+                    <img src="./assets/img/Ibile Logo.png" alt="">
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li class="">
+                    <a href="dashboard.html">
+                        <i class="far fa-chart-bar"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="">
+                        <a href="officials.html">
+                            <i class="far fa-user"></i>
+                            <p>Officers</p>
+                        </a>
+                    </li>
+
+                <li class="">
+                    <a href="dashboard.html">
+                        <i class="fab fa-connectdevelop"></i>
+                        <p>Branch</p>
+                    </a>
+                </li>
+
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <p>Loans</p>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="loans.html">Loan Product</a></li>
+                        <li><a href="details.html">Loan Details</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="">
+                    <a href="borrower.html">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        <p>Borrowers</p>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="dashboard.html">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        <p>Repayment</p>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="dashboard.html">
+                        <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                        <p>Collateral Register</p>
+                    </a>
+                </li>
+
+
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="search loans,products, names etc">
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="">
+                                    <i class="fas fa-comments"></i>
+                                </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fas fa-bell"></i>
+
+                            </a>
+                            <ul class="dropdown-menu  notify">
+                                <p class="center">Notifications</p>
+                                <li><a href="#">Account Opening<br><span>Ibukun Daramola opened account</span> </a></li>
+                               
+                                <li><a href="#">Loan Repayment<br><span>John Okafor returned ₦125,000</span> </a></li>
+                                 
+                                <li><a href="#">Loan Collection<br><span>Nnena Odion received ₦500,000 via mobile app</span> </a></li>
+                                
+                                <li><a href="#">Loan Collection<br><span>Fisayomi Ado received ₦410,000 via branch</span> </a></li>
+
+                                <li><a href="#">Loan Collection<br><span>Badmus Abubakar received ₦30,000 via app</span> </a></li>
+                                <p class="see"><a href="">See all</a></p>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <p>
+                                    Bankole Bakare <i class="fas fa-angle-down"></i> <img src="./assets/img/Avatar.png" alt="">
+                                    </p>
+
+                            </a>
+                            <ul class="dropdown-menu  account">
+                                <li class="center"><a href="#">Settings</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Profile</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Change Profile</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <h1>Loan Details</h1>
+                    <div class="col-md-12 loan">
+                         <div><i class="fas fa-search"></i> <input type="text" placeholder="Search name, serial, email address, product"></div>
+                         <button>Serach</button>
+                    </div>
+                    <div class="col-md-12 export">
+                        <a href=""><button>Export</button></a>
+                        <a href=""><button>Email</button></a>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 tabluea">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Page 1</h4>
+                                <p>1 0f 5</p>
+                            </div>
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <th class="num">Sn</th>
+                                    	<th>Name</th>
+                                    	<th>Product</th>
+                                    	<th>Interest <br>(%)</th>
+                                        <th>Loan <br> Amount</th>
+                                        <th>Principal</th>
+                                        <th>Loan Paid</th>
+                                        <th>Loan Balance</th>
+                                        <th>Final Due <br> Date</th>
+                                        <th>Last <br> Repayment</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        	<td class="num">1</td>
+                                        	<td>John Okafor</td>
+                                        	<td>Student</td>
+                                            <td>10</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">View</a></td>
+                                            <td>3rd Oct</td>
+                                            <td>Pending</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">2</td>
+                                            <td>Nnena Odion</td>
+                                            <td>Business</td>
+                                            <td>11</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">View</a></td>
+                                            <td>24th Sept</td>
+                                            <td>Pending</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">3</td>
+                                            <td>Tomi Komolafe</td>
+                                            <td>School fees</td>
+                                            <td>6</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">View</a></td>
+                                            <td>2nd Oct</td>
+                                            <td>Approved</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">4</td>
+                                            <td>Abah James</td>
+                                            <td>Rent</td>
+                                            <td>13</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">View</a></td>
+                                            <td>30th Sept</td>
+                                            <td>Declinedd</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">5</td>
+                                            <td>Abubakar Badmus</td>
+                                            <td>Business</td>
+                                            <td>7</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">View</a></td>
+                                            <td>4th Sept</td>
+                                            <td>Approved</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">6</td>
+                                            <td>Luke Kalu</td>
+                                            <td>Rent</td>
+                                            <td>13</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td>#80,000,000</td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">View</a></td>
+                                            <td>2nd Oct</td>
+                                            <td>Pending</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                   
+                                </table>
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                    </li>
+                                    <li  class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--  Charts Plugin -->
+	<script src="assets/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="assets/js/bootstrap-notify.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+	<script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
+
+	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+	<script src="assets/js/demo.js"></script>
+
+
+</html>
