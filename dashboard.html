@@ -21,6 +21,9 @@
     <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
 
     <script src="https://kit.fontawesome.com/799b643291.js" crossorigin="anonymous"></script>
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script> -->
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script> -->
 
     <link rel="stylesheet" href="style.css">
 
@@ -170,9 +173,25 @@
         </nav>
 
 
-        <div class="content">
+        <div class="content first-page">
             <div class="container-fluid">
                 <div class="row">
+                    <div class="col-md-6">
+                        <div class="card ">
+                            <div class="header">
+                                <h4 class="title">Loan Distribution</h4>
+                                <select name="" id="">
+                                    <option value="">Ikeja</option>
+                                    <option value="">Ibadan</option>
+                                    <option value="">Lokoja</option>
+                                    <option value="">Ilorin</option>
+                                </select>
+                            </div>
+                            <div class="chart-contain">
+                                <canvas width="200" id="myChart">321 Loans</canvas>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-6">
                         <div class="card ">
                             <div class="header">
@@ -185,14 +204,80 @@
                                 </select>
                             </div>
                             <div class="content">
-                                <div id="chartActivity" class="ct-chart"></div>
-
-                                <div class="footer">
-                                    <div class="legend">
-                                        <i class="fa fa-circle text-info"></i> 
-                                        <i class="fa fa-circle text-danger"></i>
-                                    </div>
-                                    <hr>
+                                <div id="container" style="width: 100%;">
+                                    <canvas id="canvas"></canvas>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin:0;">
+                    <div class="col-md-4" style="padding-left: 0;">
+                        <div class="card ">
+                            <p>Funds</p>
+                            <div class="header">
+                                <h4 class="title" style="font-size:14px;color:#000">Total Allocation</h4>
+                                <p>#80,000,000</p>
+                            </div>
+                            <div class="chart-contain">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8" style="padding-right:0;">
+                        <div class="col-md-12 tabluea" style="padding:0 0;">
+                            <div class="card">
+                                <div class="header" style="margin:0;">
+                                    <h4 class="title">List</h4>
+                                </div>
+                                <div class="content table-responsive table-full-width" style="margin:0 0; padding:15px 0;">
+                                    <table class="table table-hover table-striped" >
+                                        <thead>
+                                            <th class="num">ITEM</th>
+                                            <th>NO</th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="num">Aprroved Loan</td>
+                                                <td>30</td>
+                                                <td><a href="details.html">View details</a></td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="num">Pending Loan</td>
+                                                <td>54</td>
+                                                <td><a href="details.html">View details</a></td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="num">Declined Loan</td>
+                                                <td>60</td>
+                                                <td><a href="details.html">View details</a></td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="num">Borrowers</td>
+                                                <td>541</td>
+                                                <td><a href="borrower.html">View details</a></td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="num">Repayment</td>
+                                                <td>50</td>
+                                                <td><a href="details.html">View details</a></td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="num">Overdue</td>
+                                                <td>60</td>
+                                                <td><a href="details.html">View details</a></td>
+                                                
+                                            </tr>
+                                            
+                                        </tbody>
+                                       
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +298,8 @@
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
 	<!--  Charts Plugin -->
-	<script src="assets/js/chartist.min.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
 
     <!--  Notifications Plugin    -->
     <script src="assets/js/bootstrap-notify.js"></script>
@@ -226,6 +312,91 @@
 
 	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
     <script src="assets/js/demo.js"></script>
+    <script type="text/javascript">
+        var ctx = document.getElementById("myChart");
+
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                // labels: ["Approved Loan","Pending Loan",	"Declined Loan",	"Returned"],
+                datasets: [{    
+                    data: [40,	30,	20,	20], // Specify the data values array
+                
+                    borderColor: ['#A0DA62', '#FF8373', '#FFDA83', '#A3A0FB'], // Add custom color border 
+                    backgroundColor: ['#A0DA62', '#FF8373', '#FFDA83', '#A3A0FB'], // Add custom color background (Points and Fill)
+                    borderWidth: 1 // Specify bar border width
+                }]},         
+            options: {
+            responsive: true, // Instruct chart js to respond nicely.
+            maintainAspectRatio: true, // Add to prevent default behaviour of full-width/height 
+            }
+        });
+
+
+        var barChartData = {
+        labels: [
+            "January",
+            "Febuary",
+            "March",
+            "April",
+            "May",
+            "Jun"
+        ],
+        datasets: [
+            {
+            label: "Ontime",
+            backgroundColor: "#A0DA62",
+            borderColor: "#A0DA62",
+            borderWidth: 1,
+            data: [20, 40, 50, 80]
+            },
+            {
+            label: "Overdue",
+            backgroundColor: "#FF8373",
+            borderColor: "#FF8373",
+            borderWidth: 1,
+            data: [20, 40, 50, 80]
+            },
+            {
+            label: "Total",
+            backgroundColor: "black",
+            borderColor: "black",
+            borderWidth: 1,
+            data: [20, 40, 50, 80]
+            }
+        ]
+        };
+
+        var chartOptions = {
+        responsive: true,
+        legend: {
+            position: "top"
+        },
+        title: {
+            display: true,
+    
+        },
+        scales: {
+            yAxes: [{
+            ticks: {
+                beginAtZero: true,
+                intervals:20
+            }
+            }]
+        }
+        }
+
+        window.onload = function() {
+        var ctx = document.getElementById("canvas").getContext("2d");
+        window.myBar = new Chart(ctx, {
+            type: "bar",
+            data: barChartData,
+            options: chartOptions
+        });
+        };
+
+    </script>
+
     <script type="text/javascript">
     	$(document).ready(function(){
 

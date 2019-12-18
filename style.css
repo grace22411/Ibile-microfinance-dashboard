@@ -133,7 +133,42 @@ body {
   border-radius: 3px;
   margin-top: 50px;
 }
-
+@media only screen and (max-width: 320px) {
+  .modal .modal-dialog .modal-content .modal-body {
+    padding: 0;
+  }
+  .modal .modal-dialog .modal-content .modal-body .row {
+    padding: 0;
+    text-align: left;
+  }
+  .modal .modal-dialog .modal-content .modal-body .row .viewy {
+    width: 100%;
+  }
+  .modal .modal-dialog .modal-content .modal-body .row .col-md-12 {
+    height: 150px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .row .col-md-12 input {
+    height: 30px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .row .product {
+    padding-top: 0;
+  }
+  .modal .modal-dialog .modal-content .modal-body .row .col-md-6 p {
+    font-size: 13px;
+    width: 70%;
+    margin-top: 20px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .row .col-md-6 input[type=text], .modal .modal-dialog .modal-content .modal-body .row .col-md-6 input[type=date] {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .row button {
+    width: 50%;
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+}
 .wrapper .sidebar .sidebar-wrapper {
   background-color: #4D4A21;
 }
@@ -240,6 +275,13 @@ body {
   margin-left: 10px;
   float: left;
 }
+@media only screen and (max-width: 320px) {
+  .content .container-fluid h1 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    margin-left: 0;
+  }
+}
 .content .container-fluid .row .create button {
   float: right;
   background-color: #F57F3D;
@@ -254,6 +296,14 @@ body {
 .content .container-fluid .row .create button i {
   margin-right: 7px;
   font-size: 14px;
+}
+@media only screen and (max-width: 320px) {
+  .content .container-fluid .row .create button {
+    width: 100%;
+    height: 40px;
+    float: left;
+    margin-bottom: 15px;
+  }
 }
 .content .container-fluid .row .loan div {
   width: 90%;
@@ -287,10 +337,41 @@ body {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-.content .container-fluid .row .export {
+@media only screen and (max-width: 320px) {
+  .content .container-fluid .row .loan .col-md-4, .content .container-fluid .row .loan .col-md-12 {
+    padding: 0;
+  }
+  .content .container-fluid .row .loan div {
+    width: 70%;
+  }
+  .content .container-fluid .row .loan div i {
+    font-size: 9px;
+  }
+  .content .container-fluid .row .loan div ::placeholder {
+    font-size: 10px;
+  }
+  .content .container-fluid .row .loan button {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 720) {
+  .content .container-fluid .row .loan div {
+    width: 80%;
+  }
+  .content .container-fluid .row .loan div i {
+    font-size: 9px;
+  }
+  .content .container-fluid .row .loan div ::placeholder {
+    font-size: 10px;
+  }
+  .content .container-fluid .row .loan button {
+    width: 20%;
+  }
+}
+.content .container-fluid .export {
   margin: 30px 0 10px 0;
 }
-.content .container-fluid .row .export a button {
+.content .container-fluid .export a button {
   float: right;
   border: 1px solid #F57F3D;
   color: #F57F3D;
@@ -300,35 +381,47 @@ body {
   border-radius: 3px;
   margin-left: 5px;
 }
-.content .container-fluid .row .tabluea {
+@media only screen and (max-width: 320px) {
+  .content .container-fluid .export a button {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 720) {
+  .content .container-fluid .export a button {
+    width: 25%;
+    margin-bottom: 10px;
+  }
+}
+.content .tabluea {
   border: none !important;
 }
-.content .container-fluid .row .tabluea .card {
+.content .tabluea .card {
   border: none !important;
 }
-.content .container-fluid .row .tabluea .card .header h4 {
+.content .tabluea .card .header h4 {
   float: left;
   font-size: 15px;
   font-weight: 500;
 }
-.content .container-fluid .row .tabluea .card .header p {
+.content .tabluea .card .header p {
   float: right;
   font-size: 11px;
 }
-.content .container-fluid .row .tabluea .table-responsive {
+.content .tabluea .table-responsive {
   border: none !important;
 }
-.content .container-fluid .row .tabluea .table-responsive .table-hover {
+.content .tabluea .table-responsive .table-hover {
   border: none !important;
   padding: 0 30px;
 }
-.content .container-fluid .row .tabluea .table-responsive .table-hover .num {
+.content .tabluea .table-responsive .table-hover .num {
   padding-left: 30px;
 }
-.content .container-fluid .row .tabluea .table-responsive .table-hover thead {
+.content .tabluea .table-responsive .table-hover thead {
   padding: 10px 20px;
 }
-.content .container-fluid .row .tabluea .table-responsive .table-hover thead th {
+.content .tabluea .table-responsive .table-hover thead th {
   background-color: #F2FBE8;
   color: #4D4A21;
   text-transform: capitalize;
@@ -336,94 +429,91 @@ body {
   padding-top: 11px;
   padding-bottom: 11px;
 }
-.content .container-fluid .row .tabluea .table-responsive .table-hover tbody tr {
+.content .tabluea .table-responsive .table-hover tbody tr {
   background-color: #fff !important;
   font-size: 12px;
   font-weight: 400;
   cursor: pointer;
 }
-.content .container-fluid .row .tabluea .table-responsive .table-hover tbody tr a {
+.content .tabluea .table-responsive .table-hover tbody tr a {
   color: #F57F3D;
   text-decoration: underline;
 }
-.content .container-fluid .row .tabluea .table-responsive .table-hover tbody tr:hover {
+.content .tabluea .table-responsive .table-hover tbody tr:hover {
   background-color: #f7f7f7 !important;
 }
-.content .container-fluid .row .tabluea .table-responsive .pagination {
+.content .tabluea .table-responsive .pagination {
   padding-left: 30px;
 }
-.content .container-fluid .row .tabluea .table-responsive .pagination li {
+.content .tabluea .table-responsive .pagination li {
   margin-left: 5px !important;
 }
-.content .container-fluid .row .tabluea .table-responsive .pagination .active {
+.content .tabluea .table-responsive .pagination .active {
   background-color: #F57F3D !important;
 }
-.content .container-fluid .row .editProduct {
+.content .editProduct {
   border: none;
 }
-.content .container-fluid .row .editProduct .card {
+.content .editProduct .card {
   padding-bottom: 30px;
   border: none;
   box-shadow: 0 2px 6px #0000001A;
 }
-.content .container-fluid .row .editProduct .card h2 {
+.content .editProduct .card h2 {
   font-size: 17px;
   font-weight: 600;
   margin: 0;
   padding: 18px 30px;
   background-color: #F9F6F1;
 }
-.content .container-fluid .row .editProduct .card h2 span {
+.content .editProduct .card h2 span {
   font-weight: 400;
 }
-.content .container-fluid .row .editProduct .card .inputTexts {
+.content .editProduct .card .inputTexts {
   padding-left: 30px;
   text-align: center;
 }
-.content .container-fluid .row .editProduct .card .inputTexts p {
+.content .editProduct .card .inputTexts p {
   font-size: 13px;
   color: #4D4A21;
+  width: 30%;
 }
-.content .container-fluid .row .editProduct .card .inputTexts .inpt {
+.content .editProduct .card .inputTexts .inpt {
   width: 100%;
   height: 50px;
   margin-top: 30px;
   text-align: left;
 }
-.content .container-fluid .row .editProduct .card .inputTexts .inpt input, .content .container-fluid .row .editProduct .card .inputTexts .inpt select {
-  margin-left: 150px;
-}
-.content .container-fluid .row .editProduct .card .inputTexts .inpt input[type=text], .content .container-fluid .row .editProduct .card .inputTexts .inpt input[type=number] {
+.content .editProduct .card .inputTexts .inpt input[type=text], .content .editProduct .card .inputTexts .inpt input[type=number] {
   height: 45px;
   width: 60px;
   border: 1px solid #b7b7b7;
   border-radius: 2px;
   padding-left: 10px;
 }
-.content .container-fluid .row .editProduct .card .inputTexts .inpt select {
+.content .editProduct .card .inputTexts .inpt select {
   height: 45px;
   width: 250px;
   border: 1px solid #b7b7b7;
   border-radius: 2px;
   padding-left: 10px;
-  margin-left: 130px;
 }
-.content .container-fluid .row .editProduct .card .inputTexts .inpt input[type=radio] {
-  margin-left: 50px;
+.content .editProduct .card .inputTexts .inpt input[type=radio] {
+  margin-left: 10px;
 }
-.content .container-fluid .row .editProduct .card .inputTexts .inpt ::placeholder {
+.content .editProduct .card .inputTexts .inpt ::placeholder {
   font-size: 11px;
   color: #b7b7b7;
 }
-.content .container-fluid .row .editProduct .card .inputTexts .inpt p {
+.content .editProduct .card .inputTexts .inpt p {
   float: left;
 }
-.content .container-fluid .row .editProduct .card .inputTexts h5 {
+.content .editProduct .card .inputTexts h5 {
   text-align: left;
   font-size: 15px;
   font-weight: 600;
 }
-.content .container-fluid .row .editProduct .card .inputTexts button {
+.content .editProduct .card .inputTexts button {
   width: 32%;
   background-color: #F57F3D;
   border: none;
@@ -432,7 +522,49 @@ body {
   border-radius: 3px;
   color: #fff;
 }
-.content .container-fluid .row .right select {
+@media only screen and (max-width: 320px) {
+  .content h1 {
+    margin-bottom: 10px;
+  }
+  .content .col-md-12, .content .col-md-4 {
+    padding: 0;
+  }
+  .content .mob {
+    margin-top: 15px;
+  }
+  .content .editProduct .card h2 {
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  .content .editProduct .card .inputTexts {
+    padding-left: 10px;
+    text-align: left;
+  }
+  .content .editProduct .card .inputTexts p {
+    width: 100%;
+  }
+  .content .editProduct .card .inputTexts .inpt {
+    height: 60px;
+  }
+  .content .editProduct .card .inputTexts .inpt input[type=text], .content .editProduct .card .inputTexts .inpt input[type=number], .content .editProduct .card .inputTexts .inpt select {
+    width: 95%;
+    height: 40px;
+  }
+  .content .editProduct .card .inputTexts button {
+    height: 40px;
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 720) {
+  .content .col-md-12, .content .col-md-4 {
+    padding: 0;
+  }
+  .content .mob {
+    margin-top: 15px;
+  }
+}
+
+.row .right select {
   background-color: #fff;
   width: 97%;
   height: 45px;
@@ -441,7 +573,8 @@ body {
   border-radius: 3px;
   padding-left: 15px;
 }
-.content .container-fluid .officers .viewy {
+
+.officers .viewy {
   box-shadow: 0 2px 6px #0000001A;
   height: 200px;
   width: 31%;
@@ -452,37 +585,47 @@ body {
   border-radius: 7px;
   background-color: #fff;
 }
-.content .container-fluid .officers .viewy h6 {
+.officers .viewy h6 {
   font-size: 15px;
   text-transform: capitalize;
   font-weight: 400;
   color: #4D4A21;
 }
-.content .container-fluid .officers .viewy div {
+.officers .viewy div {
   width: 100%;
   border-bottom: 1px solid #eee;
   padding: 15px 0;
   height: 40px;
 }
-.content .container-fluid .officers .viewy div .side {
+.officers .viewy div .side {
   color: #000;
   font-size: 12px;
   font-weight: 700;
   float: left;
 }
-.content .container-fluid .officers .viewy div .num {
+.officers .viewy div .num {
   float: right;
   margin: 0;
   font-weight: 300;
   font-size: 11px;
 }
-.content .container-fluid .officers .shift {
+.officers .shift {
   margin-left: 3%;
 }
-.content .container-fluid .officers .toh {
+.officers .toh {
   margin-top: 3%;
 }
-.content .container-fluid .borrow .viewy {
+@media only screen and (max-width: 320px) {
+  .officers .viewy {
+    width: 100%;
+    margin-top: 3%;
+  }
+  .officers .shift {
+    margin-left: 0;
+  }
+}
+
+.borrow .viewy {
   box-shadow: 0 2px 6px #0000001A;
   height: 100px;
   width: 48%;
@@ -493,23 +636,23 @@ body {
   border-radius: 7px;
   background-color: #fff;
 }
-.content .container-fluid .borrow .viewy div {
+.borrow .viewy div {
   width: 100%;
   padding-top: 22px;
 }
-.content .container-fluid .borrow .viewy div i {
+.borrow .viewy div i {
   float: left;
   color: #F57F3D;
   margin-right: 20px;
   font-size: 25px;
 }
-.content .container-fluid .borrow .viewy div p {
+.borrow .viewy div p {
   font-size: 16px;
   font-weight: 700;
   color: #4D4A21;
   display: inline-block;
 }
-.content .container-fluid .borrow .viewy div a button {
+.borrow .viewy div a button {
   float: right;
   border: 1px solid #F57F3D;
   color: #F57F3D;
@@ -518,73 +661,75 @@ body {
   height: 35px;
   width: 100px;
 }
-.content .container-fluid .borrow .shift {
+.borrow .shift {
   margin-left: 3%;
 }
-.content .container-fluid .borrow .toh {
+.borrow .toh {
   margin-top: 3%;
 }
-.content .container-fluid .link .back {
+
+.link .back {
   color: #F57F3D;
   float: left;
   margin-right: 30px;
   font-size: 13px;
   font-weight: 500;
 }
-.content .container-fluid .link h1 {
+.link h1 {
   font-size: 35px;
   font-weight: 600;
   color: #4D4A21;
   margin: 0;
 }
-.content .container-fluid .link .print {
+.link .print {
   float: right;
 }
-.content .container-fluid .link .print a {
+.link .print a {
   font-size: 11px;
   color: #F57F3D;
   margin-right: 20px;
 }
-.content .container-fluid .borrowDetail {
+
+.borrowDetail {
   background-color: #fff;
   box-shadow: 0 2px 6px #0000001A;
   margin: 0;
   padding: 10px 0 30px 0;
   display: none;
 }
-.content .container-fluid .borrowDetail .col-md-12 {
+.borrowDetail .col-md-12 {
   padding-top: 15px;
 }
-.content .container-fluid .borrowDetail .col-md-12 .fa-user-alt {
+.borrowDetail .col-md-12 .fa-user-alt {
   float: left;
   color: #F57F3D;
   font-size: 22px;
   margin-right: 30px;
 }
-.content .container-fluid .borrowDetail .col-md-12 p {
+.borrowDetail .col-md-12 p {
   font-size: 16px;
   display: inline-block;
   font-weight: 700;
   color: #4D4A21;
 }
-.content .container-fluid .borrowDetail .col-md-12 .fa-times {
+.borrowDetail .col-md-12 .fa-times {
   float: right;
   color: #F57F3D;
   cursor: pointer;
 }
-.content .container-fluid .borrowDetail .first {
+.borrowDetail .first {
   padding: 0 30px 10px 50px;
 }
-.content .container-fluid .borrowDetail .second {
+.borrowDetail .second {
   padding: 0 50px 10px 30px;
 }
-.content .container-fluid .borrowDetail label {
+.borrowDetail label {
   font-size: 12px;
   font-weight: 500;
   color: #4D4A21;
   margin-top: 15px;
 }
-.content .container-fluid .borrowDetail input {
+.borrowDetail input {
   width: 100%;
   border-bottom: 1px solid #b7b7b7;
   border-top: none;
@@ -593,50 +738,53 @@ body {
   background-color: transparent;
   height: 40px;
 }
-.content .container-fluid .borrowDetail ::placeholder {
+.borrowDetail ::placeholder {
   font-size: 12px;
 }
 
-.container-fluid .row .ibile-logo {
+.contain {
+  padding: 0;
+}
+.contain .row .ibile-logo {
   height: 1000px;
   background-image: url(./assets/img/Left-Partition.svg);
   background-size: cover;
   background-position: right -10px bottom 200px;
 }
-.container-fluid .row .ibile-logo .log {
+.contain .row .ibile-logo .log {
   margin: auto;
   width: 50%;
   padding-top: 100px;
 }
-.container-fluid .row .ibile-logo .log img {
+.contain .row .ibile-logo .log img {
   width: 218px;
   height: 328px;
   margin-left: 50px;
 }
-.container-fluid .row .theForm {
+.contain .row .theForm {
   padding-top: 100px;
   padding-right: 50px;
   padding-left: 0;
 }
-.container-fluid .row .theForm h1 {
+.contain .row .theForm h1 {
   font-size: 35px;
   font-weight: 600;
   margin-bottom: 5px;
 }
-.container-fluid .row .theForm p {
+.contain .row .theForm p {
   font-size: 14px;
   color: #b7b7b7;
   margin-top: 0;
 }
-.container-fluid .row .theForm label {
+.contain .row .theForm label {
   font-weight: 400;
   font-size: 12px;
   color: #000;
 }
-.container-fluid .row .theForm input {
+.contain .row .theForm input {
   border-bottom: 1px solid rgba(183, 183, 183, 0.5);
 }
-.container-fluid .row .theForm div.error {
+.contain .row .theForm div.error {
   position: relative;
   top: -1rem;
   left: 0rem;
@@ -647,10 +795,10 @@ body {
   -o-transform: translateY(0%);
   transform: translateY(0%);
 }
-.container-fluid .row .theForm .input-field {
+.contain .row .theForm .input-field {
   padding-left: 0;
 }
-.container-fluid .row .theForm button {
+.contain .row .theForm button {
   width: 40%;
   height: 35px;
   margin-top: 40px;
@@ -658,6 +806,341 @@ body {
   background-color: #F57F3D;
   border: none;
   border-radius: 3px;
+}
+
+.dashboard-contented .container-fluid .row {
+  margin: 0;
+}
+.dashboard-contented .container-fluid .row .name-detail .head-name {
+  width: 100%;
+  height: 100px;
+}
+.dashboard-contented .container-fluid .row .name-detail .head-name h1 {
+  font-size: 32px;
+  color: #4D4A21;
+  float: left;
+  margin-top: 0;
+  font-weight: 600;
+}
+.dashboard-contented .container-fluid .row .name-detail .head-name a button {
+  float: right;
+  width: 30%;
+  height: 40px;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #F57F3D;
+  border: none;
+}
+.dashboard-contented .container-fluid .row .name-detail .det, .dashboard-contented .container-fluid .row .name-detail .det_2 {
+  padding-left: 0;
+  float: left !important;
+}
+.dashboard-contented .container-fluid .row .name-detail .det .detail, .dashboard-contented .container-fluid .row .name-detail .det_2 .detail {
+  background-color: #fff;
+  height: 150px;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  border: 1px solid #b7b7b7;
+  box-shadow: 0 2px 6px #0000001A;
+  border-radius: 7px;
+  position: relative;
+}
+.dashboard-contented .container-fluid .row .name-detail .det .detail h2, .dashboard-contented .container-fluid .row .name-detail .det_2 .detail h2 {
+  font-size: 16px;
+  color: #4D4A21;
+  margin-top: 0;
+  font-weight: 700;
+}
+.dashboard-contented .container-fluid .row .name-detail .det .detail .footer, .dashboard-contented .container-fluid .row .name-detail .det_2 .detail .footer {
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.dashboard-contented .container-fluid .row .name-detail .det .detail .footer p, .dashboard-contented .container-fluid .row .name-detail .det_2 .detail .footer p {
+  font-size: 25px;
+  color: #4D4A21;
+  float: left;
+  margin: 0;
+}
+.dashboard-contented .container-fluid .row .name-detail .det .detail .footer a, .dashboard-contented .container-fluid .row .name-detail .det_2 .detail .footer a {
+  float: right;
+  margin-top: 10px;
+  color: #F57F3D;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.dashboard-contented .container-fluid .row .name-detail .det_2 {
+  padding-right: 0;
+  padding-left: 15px;
+}
+.dashboard-contented .container-fluid .row .name-detail .det_2 .detail .footer {
+  width: 70%;
+  margin-bottom: 30px;
+}
+.dashboard-contented .container-fluid .row .name-detail .det_2 .detail .footer p {
+  float: left;
+  font-size: 12px;
+  font-weight: 500;
+}
+.dashboard-contented .container-fluid .row .name-detail .det_2 .detail .footer p span {
+  font-size: 17px;
+  font-weight: 300;
+}
+.dashboard-contented .container-fluid .row .name-detail .det_2 .detail .footer .date {
+  float: right;
+}
+.dashboard-contented .container-fluid .row {
+  margin: 0;
+}
+.dashboard-contented .container-fluid .row .loan {
+  font-size: 23px;
+  font-weight: 600;
+  padding-left: 15px;
+}
+@media only screen and (max-width: 320px) {
+  .dashboard-contented .container-fluid .row .loan {
+    padding-left: 0;
+  }
+  .dashboard-contented .container-fluid .row .loan div {
+    width: 70% !important;
+  }
+  .dashboard-contented .container-fluid .row .loan button {
+    width: 30%;
+  }
+}
+.dashboard-contented .container-fluid .row .col-md-12 {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 0;
+}
+.dashboard-contented .container-fluid .row .col-md-12 ul {
+  padding: 10px 0 10px 0;
+}
+.dashboard-contented .container-fluid .row .col-md-12 ul li {
+  border-bottom: 1px solid rgba(183, 183, 183, 0.3);
+  padding: 15px 30px;
+  list-style-type: none;
+}
+.dashboard-contented .container-fluid .row .col-md-12 ul li span {
+  float: right;
+}
+.dashboard-contented .container-fluid .row .col-md-12 ul li span a {
+  color: #F57F3D;
+}
+.dashboard-contented .container-fluid .row .col-md-12 ul .not {
+  color: #b7b7b7;
+}
+.dashboard-contented .container-fluid .row .col-md-12 ul .active {
+  background-color: rgba(183, 183, 183, 0.3);
+  color: #F57F3D;
+}
+.dashboard-contented .container-fluid .tabbb {
+  background-color: transparent;
+  margin-top: 50px;
+}
+.dashboard-contented .container-fluid .tabbb h2 {
+  font-size: 23px;
+  font-weight: 600;
+  padding-left: 15px;
+}
+.dashboard-contented .container-fluid .tabluea {
+  border: none !important;
+  background-color: transparent !important;
+}
+.dashboard-contented .container-fluid .tabluea .card {
+  border: none !important;
+}
+.dashboard-contented .container-fluid .tabluea .card .header h4 {
+  float: left;
+  font-size: 15px;
+  font-weight: 500;
+}
+.dashboard-contented .container-fluid .tabluea .card .header p {
+  float: right;
+  font-size: 11px;
+}
+.dashboard-contented .container-fluid .tabluea .table-responsive {
+  border: none !important;
+}
+.dashboard-contented .container-fluid .tabluea .table-responsive .table-hover {
+  border: none !important;
+  padding: 0 30px;
+}
+.dashboard-contented .container-fluid .tabluea .table-responsive .table-hover .num {
+  padding-left: 30px;
+}
+.dashboard-contented .container-fluid .tabluea .table-responsive .table-hover thead {
+  padding: 10px 20px;
+}
+.dashboard-contented .container-fluid .tabluea .table-responsive .table-hover thead th {
+  background-color: #F2FBE8;
+  color: #4D4A21;
+  text-transform: capitalize;
+  font-weight: 700;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.dashboard-contented .container-fluid .tabluea .table-responsive .table-hover tbody tr {
+  background-color: #fff !important;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.dashboard-contented .container-fluid .tabluea .table-responsive .table-hover tbody tr a {
+  color: #F57F3D;
+  text-decoration: underline;
+}
+.dashboard-contented .container-fluid .tabluea .table-responsive .table-hover tbody tr:hover {
+  background-color: #f7f7f7 !important;
+}
+.dashboard-contented .container-fluid .tabluea .table-responsive .pagination {
+  padding-left: 30px;
+}
+.dashboard-contented .container-fluid .tabluea .table-responsive .pagination li {
+  margin-left: 5px !important;
+}
+.dashboard-contented .container-fluid .tabluea .table-responsive .pagination .active {
+  background-color: #F57F3D !important;
+}
+@media only screen and (max-width: 320px) {
+  .dashboard-contented .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.first-page .container-fluid .row .col-md-6 .card, .first-page .container-fluid .row .col-md-4 .card {
+  background-color: #fff;
+  height: 350px;
+}
+.first-page .container-fluid .row .col-md-6 .card .header .title, .first-page .container-fluid .row .col-md-4 .card .header .title {
+  float: left;
+  color: #4D4A21;
+  font-size: 18px;
+  font-weight: 500;
+}
+.first-page .container-fluid .row .col-md-6 .card .header select, .first-page .container-fluid .row .col-md-4 .card .header select {
+  float: right;
+  width: 100px;
+  border: 1px solid #F57F3D;
+  color: #F57F3D;
+  border-radius: 3px;
+  box-shadow: 0 3px 5px solid rgba(153, 153, 153, 0.5);
+}
+.first-page .container-fluid .row .col-md-6 .card .header p, .first-page .container-fluid .row .col-md-4 .card .header p {
+  float: right;
+  color: #4D4A21;
+  font-size: 12px;
+  font-weight: 300;
+}
+.first-page .container-fluid .row .col-md-6 .card .chart-contain, .first-page .container-fluid .row .col-md-4 .card .chart-contain {
+  width: 70%;
+  float: left;
+  height: 200px;
+}
+.first-page .container-fluid .row .col-md-6 .card .chart-contain canvas, .first-page .container-fluid .row .col-md-4 .card .chart-contain canvas {
+  float: left;
+  display: inline-block !important;
+}
+
+.thetoggleTabs {
+  margin-bottom: 70px;
+  width: 100%;
+}
+.thetoggleTabs .toppy {
+  border-bottom: 2px solid rgba(84, 87, 92, 0.3);
+  height: 70px;
+  width: 100%;
+}
+.thetoggleTabs p {
+  font-size: 30px;
+  font-weight: 400;
+  float: left;
+}
+.thetoggleTabs .nav {
+  float: right;
+  border: none;
+}
+.thetoggleTabs .nav li {
+  float: right;
+}
+.thetoggleTabs .nav li a {
+  color: #000;
+}
+.thetoggleTabs .tab-pane {
+  padding: 20px 0;
+  width: 100%;
+}
+.thetoggleTabs .tab-pane h2 {
+  font-size: 19px;
+  font-weight: 700;
+}
+.thetoggleTabs .tab-pane .imaggge {
+  border: 1px solid rgba(84, 87, 92, 0.2);
+  height: 300px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+.thetoggleTabs .tab-pane .imaggge .avatar {
+  width: 100%;
+  height: 265px;
+  background-image: url(assets/img/img_avatar.png);
+  background-position: top;
+  background-size: cover;
+}
+.thetoggleTabs .tab-pane .first {
+  padding: 10px 30px 20px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px #0000001A;
+  margin-left: 30px;
+  height: 450px;
+}
+.thetoggleTabs .tab-pane .second {
+  padding: 0 50px 10px 30px;
+}
+.thetoggleTabs .tab-pane label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4D4A21;
+  margin-top: 15px;
+}
+.thetoggleTabs .tab-pane input, .thetoggleTabs .tab-pane select {
+  width: 100%;
+  border-bottom: 1px solid #b7b7b7;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+  height: 40px;
+}
+.thetoggleTabs .tab-pane ::placeholder {
+  font-size: 12px;
+}
+.thetoggleTabs .tab-pane h1 {
+  font-size: 18px;
+  margin: 20px 0 0 0;
+  font-weight: 600;
+}
+.thetoggleTabs .tab-pane form {
+  width: 95%;
+  margin: auto;
+}
+.thetoggleTabs .tab-pane .form-group label {
+  color: #000;
+  font-weight: 400;
+}
+.thetoggleTabs .tab-pane button {
+  width: 120px;
+  height: 50px;
+  color: #b7b7b7;
+  border: none;
+  margin: 60px 0px 70px 25px;
+  background-color: #F57F3D;
 }
 
 /*# sourceMappingURL=style.css.map */

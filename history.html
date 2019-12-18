@@ -5,7 +5,7 @@
 	<link rel="icon" type="image/png" href="assets/img/Ibile Logo.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Loans | Ibile Microfinance Bank</title>
+	<title>History | Ibile Microfinance Bank</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -43,60 +43,25 @@
 
             <ul class="nav">
                 <li class="">
-                    <a href="dashboard.html">
+                    <a href="user-dashboard.html">
                         <i class="far fa-chart-bar"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
 
-                <li class="">
-                    <a href="officials.html">
-                        <i class="far fa-user"></i>
-                        <p>Officers</p>
-                    </a>
-                </li>
-
-                <li class="">
-                    <a href="dashboard.html">
+                <li class="active">
+                    <a href="history.html">
                         <i class="fab fa-connectdevelop"></i>
-                        <p>Branch</p>
-                    </a>
-                </li>
-
-                <li class="dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <p>Loans</p>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="loans.html">Loan Product</a></li>
-                        <li><a href="details.html">Loan Details</a></li>
-                    </ul>
-                </li>
-
-
-                <li class="">
-                    <a href="borrower.html">
-                        <i class="fa fa-money" aria-hidden="true"></i>
-                        <p>Borrowers</p>
+                        <p>History</p>
                     </a>
                 </li>
 
                 <li class="">
-                    <a href="dashboard.html">
-                        <i class="fa fa-credit-card" aria-hidden="true"></i>
-                        <p>Repayment</p>
+                    <a href="profile.html">
+                        <i class="far fa-user"></i>
+                        <p>Profile</p>
                     </a>
                 </li>
-
-                <li class="">
-                    <a href="dashboard.html">
-                        <i class="fa fa-address-book-o" aria-hidden="true"></i>
-                        <p>Collateral Register</p>
-                    </a>
-                </li>
-
-                
 
             </ul>
     	</div>
@@ -118,7 +83,7 @@
                     <ul class="nav navbar-nav navbar-left">
                         <li>
                                 <i class="fas fa-search"></i>
-                                <input type="text" placeholder="search loans,products, names etc">
+                                <input type="text" placeholder="">
                         </li>
                     </ul>
 
@@ -161,7 +126,7 @@
                                 <li class="divider"></li>
                                 <li><a href="#">Change Profile</a></li>
                                 <li class="divider"></li>
-                                <li><a href="login.html">Logout</a></li>
+                                <li><a href="user-login.html">Logout</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -170,52 +135,96 @@
         </nav>
 
 
-        <div class="content">
+        <div class="content dashboard-contented">
             <div class="container-fluid">
-                <div class="row">
-                    <h1 style="float:none">Loan Product</h1> <br>
-                    <a href="loans.html"><i class="fas fa-long-arrow-alt-left"></i> Back</a>
-                </div>
-                <div class="row">
-                    <div class="col-md-12  editProduct">
-                        <div class="card">
-                            <h2>Create Loan Product</h2><br>
-
-                            <div class="inputTexts">
-                                  <div class="inpt"><p>Product Name</p> 
-                                    <input type="text" placeholder="enter name of loan product" style="width:200px;">
-                                </div>
-                                  <div class="inpt"><p>Interest Rate</p> <input type="text" placeholder="%"></div>
-                                  <div class="inpt">
-                                      <p>Repayment Plan</p> <select name="" id="">
-                                          <option value="">Weekly</option>
-                                          <option value="">Monthly</option>
-                                          <option value="">Yearly</option>
-                                        </select>
-                                  </div>
-                                  <div class="inpt">
-                                    <p>Change Mode of Repayment</p> <input type="radio">Autodisbursement <input type="radio">Manual
-                                  </div>
-                                  
-                                <h5>Auto Disbursement Criteria</h5>
-                                  <div class="inpt"><p>Credit Score</p> <input type="number"></div>
-                                  <div class="inpt">
-                                        <p>Guarantor</p> <select name="" id="">
-                                            <option value="">Government</option>
-                                            <option value="">Government</option>
-                                            <option value="">Government</option>
-                                          </select>
+                    <div class="row">
+                            <div class="col-md-8 name-detail">
+                                    <div class="head-name">
+                                        <h1>Hello Dimeji</h1>
+                                        <a href="#"><button>Apply for Loan</button></a>
                                     </div>
-                                    <div class="inpt">
-                                            <p>Employment Status</p> <select name="" id="">
-                                                <option value="">Employed</option>
-                                                <option value="">Not Employed</option>
-                                                <option value="">Self Employed</option>
-                                              </select>
+                                        <div class="col-md-6 det">
+                                            <div class="detail">
+                                                <h2>Loan Amount</h2>
+                                                <div class="footer">
+                                                    <p>#170,000</p> <a href="#">Pay Loan</a>
+                                                </div>
+                                            </div>
                                         </div>
-
-                                  <button>Create</button>
-                                
+                                        <div class="col-md-6 det_2">
+                                            <div class="detail">
+                                                <h2>Next Repayment Amount</h2>
+                                                <div class="footer">
+                                                        <p>Amount <br><span>#45,843.32</span></p>
+                                                    <p class="date">Due Date <br><span>Oct 04, 2019</span></p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+            
+                                </div>
+                        </div>
+                <div class="row tabbb">
+                    <h2>Loan History</h2>
+                    <div class="col-md-12 tabluea">
+                        <div class="card">
+                            
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <th class="num">Sn</th>
+                                    	<th>Loan Product</th>
+                                        <th>Loan Amount</th>
+                                        <th>Loan Status</th>
+                                        <th>Details</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        	<td class="num">1</td>
+                                        	<td>Rent Loan</td>
+                                            <td>#200,000</td>
+                                            <td>Pending</td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">2</td>
+                                            <td>Rent Loan</td>
+                                            <td>#200,000</td>
+                                            <td>Pending</td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">3</td>
+                                            <td>Rent Loan</td>
+                                            <td>#200,000</td>
+                                            <td>Pending</td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">4</td>
+                                            <td>Rent Loan</td>
+                                            <td>#200,000</td>
+                                            <td>Pending</td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">5</td>
+                                            <td>Rent Loan</td>
+                                            <td>#200,000</td>
+                                            <td>Pending</td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">View</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">6</td>
+                                            <td>Rent Loan</td>
+                                            <td>#200,000</td>
+                                            <td>Pending</td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">View</a></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                   
+                                </table>
                             </div>
                         </div>
                     </div>
